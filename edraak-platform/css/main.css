@@ -56,6 +56,18 @@ body {
     z-index: -1;
 }
 
+@media (max-width: 991px) {
+    .hide-md {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hide-sm {
+        display: none;
+    }
+}
+
 /* Start Header */
 header .navbar-toggler {
     position: relative;
@@ -146,10 +158,10 @@ header .navbar-nav .nav-item .nav-link.active::after {
 /* Start Home Page */
 .main-hero .swiper-main-hero .swiper-slide {
     position: relative;
+    margin-top: 25px;
 }
 
 .main-hero .swiper-main-hero {
-    padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
 }
 
@@ -158,46 +170,28 @@ header .navbar-nav .nav-item .nav-link.active::after {
     width: 100%;
     height: 25%;
     left: 0;
-    bottom: 11%;
+    bottom: 0%;
     background-color: #0056FF;
     z-index: -1;
 }
 
-.main-hero .swiper-main-hero .swiper-slide {
-    overflow: hidden;
-}
+
 
 .main-hero .swiper-main-hero .swiper-slide .dashed-line.line-column {
     background-image: url(../img/dashed-line-col.png);
-    left: 50%;
-    transform: translateX(-50%);
     z-index: 0;
     width: 7px;
     height: 100%;
     background-repeat: repeat-y;
     background-size: contain;
-
-}
-
-@media (min-width: 992px) {
-    .main-hero .swiper-main-hero .swiper-slide .image {
-        width: 450px;
-        height: 450px;
-        mask-image: url('../img/slide-mask.svg');
-        -webkit-mask-image: url('../img/slide-mask.svg');
-        mask-size: cover;
-    }
-
-    .main-hero .swiper-main-hero .swiper-slide .image img {
-        scale: 1.8;
-    }
+    left: 25%;
 }
 
 .main-hero .swiper-main-hero .swiper-slide .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 1/1;
+    aspect-ratio: 2/1;
 }
 
 .main-hero .swiper-main-hero .swiper-slide .content p {
@@ -205,6 +199,13 @@ header .navbar-nav .nav-item .nav-link.active::after {
     color: var(--dark-color);
     font-size: clamp(17px, 22px, 4vw);
     margin-top: 35px;
+    text-align: justify;
+}
+
+.main-hero .swiper-main-hero .text .line {
+    position: absolute;
+    right: 0;
+    bottom: 5%;
 }
 
 .main-hero .swiper-main-hero .link-btn {
@@ -226,23 +227,169 @@ header .navbar-nav .nav-item .nav-link.active::after {
 
 .main-hero .swiper-main-hero .swiper-button-prev,
 .main-hero .swiper-main-hero .swiper-button-next {
-    width: clamp(75px, 125px, 4vw);
+    width: clamp(45px, 105px, 4vw);
+    height: clamp(45px, 105px, 4vw);
     transform: translateX(-50%);
     top: 70%;
 }
 
 .main-hero .swiper-main-hero .swiper-button-next {
-    left: 40%;
+    left: 55%;
 }
 
 
 .main-hero .swiper-main-hero .swiper-button-prev {
-    right: 50%;
+    right: unset;
+    left: 65%;
 }
 
 .main-hero .swiper-main-hero .swiper-button-next::after,
 .main-hero .swiper-main-hero .swiper-button-prev::after {
     content: none;
+}
+
+@media (min-width: 992px) {
+    .main-hero .swiper-main-hero .swiper-slide .image {
+        width: 450px;
+        height: 450px;
+        mask-image: url('../img/slide-mask.svg');
+        -webkit-mask-image: url('../img/slide-mask.svg');
+        mask-size: cover;
+    }
+
+    .main-hero .swiper-main-hero .swiper-slide .image img {
+        scale: 1.8;
+    }
+
+    .main-hero .swiper-main-hero .swiper-slide .dashed-line.line-column {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main-hero .swiper-main-hero .link-btn {
+        bottom: -10px;
+        position: absolute;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .main-hero .swiper-main-hero .swiper-slide {
+        min-height: 100dvh;
+    }
+
+    .main-hero .swiper-main-hero .swiper-slide .text {
+        max-height: 70dvh;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-prev,
+    .main-hero .swiper-main-hero .swiper-button-next {
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-prev {
+        left: 30%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-next {
+        left: 15%;
+    }
+
+    .main-hero .swiper-main-hero .blue-el {
+        height: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main-hero .swiper-main-hero .swiper-button-prev,
+    .main-hero .swiper-main-hero .swiper-button-next {
+        transform: translate(-50%, -50%);
+        top: 35%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-prev {
+        left: 30%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-next {
+        left: 15%;
+    }
+
+    .main-hero .swiper-main-hero .link-btn {
+        width: 100%;
+        justify-content: center;
+        height: 100%;
+    }
+}
+
+@media (max-width: 555px) {
+
+    .main-hero .swiper-main-hero .swiper-button-prev,
+    .main-hero .swiper-main-hero .swiper-button-next {
+        transform: translate(-50%, -50%);
+        top: 30%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-prev {
+        left: 30%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-next {
+        left: 15%;
+    }
+}
+
+@media (max-width: 445px) {
+
+    .main-hero .swiper-main-hero .swiper-button-prev,
+    .main-hero .swiper-main-hero .swiper-button-next {
+        transform: translate(-50%, -50%);
+        top: 25%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-prev {
+        left: 30%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-next {
+        left: 15%;
+    }
+}
+
+@media (max-width: 345px) {
+
+    .main-hero .swiper-main-hero .swiper-button-prev,
+    .main-hero .swiper-main-hero .swiper-button-next {
+        transform: translate(-50%, -50%);
+        top: 20%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-prev {
+        left: 30%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-next {
+        left: 15%;
+    }
+}
+
+@media (max-width: 275px) {
+
+    .main-hero .swiper-main-hero .swiper-button-prev,
+    .main-hero .swiper-main-hero .swiper-button-next {
+        transform: translate(-50%, -50%);
+        top: 15%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-prev {
+        left: 30%;
+    }
+
+    .main-hero .swiper-main-hero .swiper-button-next {
+        left: 15%;
+    }
 }
 
 .skills-cards {
