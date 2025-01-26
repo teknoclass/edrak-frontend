@@ -1,0 +1,518 @@
+:root {
+    --primary-color: #213E8D;
+    --secondary-color: #58C0CE;
+    --white-color: #ffffff;
+    --labels-color: #212121;
+    --gray-color: #8E8E93;
+    --gray-color-4: #D1D1D6;
+    --section-pading: 60px;
+    --transition-ease: all .3s ease-in-out;
+    --transition-linear: all .3s linear;
+}
+
+html[dir="rtl"] .form-control {
+    direction: rtl;
+}
+
+/* Buttons */
+.btn-primary {
+    color: var(--white-color);
+    font-weight: 700;
+    border-radius: 10px !important;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: var(--transition-linear);
+}
+
+.btn-primary:hover {
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+.btn-secondary {
+    color: var(--white-color);
+    font-weight: 700;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    transition: var(--transition-linear);
+}
+
+.btn-secondary:hover {
+    color: var(--secondary-color);
+    background-color: var(--gray-color-5);
+}
+
+/* Color */
+.text-c-primary {
+    color: var(--primary-color);
+}
+
+
+.text-c-secondary {
+    color: var(--secondary-color);
+}
+
+.text-c-label {
+    color: var(--labels-color);
+}
+
+/* Background */
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-secondary {
+    background-color: var(--secondary-color);
+}
+
+.bg-gray-6 {
+    background-color: var(--gray-color-6);
+}
+
+.bg-lighter {
+    background-color: var(--lighter-bg-color);
+}
+
+/* public */
+.fw-medium {
+    font-weight: 500;
+}
+
+.section-padding {
+    padding-top: var(--section-pading);
+    padding-bottom: var(--section-pading);
+}
+
+body {
+    font-family: "Tajawal", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+h1 {
+    font-size: clamp(30px, 42px, 4vw);
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+
+main#main-content {
+    flex: 1 1 0%;
+}
+
+/* Start Header */
+header .navbar-brand img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+}
+
+header .navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+header .navbar-nav .nav-item .nav-link.active {
+    color: var(--secondary-color);
+}
+
+/* End Header */
+
+/* Start Main Hero:<Home-Page> */
+.main-hero {
+    min-height: 80dvh;
+}
+
+.main-hero .swiper-slide {
+    height: 100%;
+}
+
+.main-hero .swiper-slide .bg-slide {
+    height: 650px;
+    max-height: 80%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+}
+
+.main-hero .swiper-slide .bg-slide .container {
+    color: var(--white-color);
+    text-align: center;
+    height: 70%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 35px;
+}
+
+.main-hero .swiper-slide .bg-slide.slide-0 .container {
+    background-color: #213E8DA6;
+}
+
+.main-hero .swiper-slide .bg-slide.slide-1 .container {
+    background-color: #951F7AA6;
+}
+
+.main-hero .swiper-slide .bg-slide.slide-2 .container {
+    background-color: #00AB94D9;
+}
+
+.main-hero .swiper-slide .bg-slide .container .text h1 {
+    font-weight: 700;
+}
+
+.main-hero .swiper-slide .bg-slide .container .text p {
+    font-weight: 500;
+    font-size: clamp(20px, 28px, 4vw);
+    margin-top: 25px;
+}
+
+.main-hero .swiper-slide .image {
+    max-width: 550px;
+    height: 315px;
+    text-align: center;
+    margin: 0px auto;
+    position: relative;
+    top: -200px;
+}
+
+.main-hero .swiper-slide .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* End Main Hero:<Home-Page> */
+
+/* Start Educational Furniture:<Home-Page> */
+.educational-furniture {
+    position: relative;
+    background-color: #EDF1F2CC;
+    border: 1px solid var(--gray-color-4);
+    overflow: hidden;
+}
+
+.educational-furniture::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/liness.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    opacity: 30%;
+}
+
+.educational-furniture .item {
+    position: relative;
+    overflow: hidden;
+    max-width: 255px;
+    height: 235px;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+
+.educational-furniture .item .image,
+.educational-furniture .item .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.educational-environments .item .image img,
+.educational-furniture .item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-ease);
+}
+
+.educational-environments .item .content,
+.educational-furniture .item .content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #00000080;
+    opacity: 0;
+    color: var(--white-color);
+    transition: var(--transition-ease);
+    padding: 5px 10px;
+}
+
+.educational-environments .item:hover .image img,
+.educational-furniture .item:hover .image img {
+    transform: scale(1.1);
+}
+
+.educational-environments .item:hover .content,
+.educational-furniture .item:hover .content {
+    opacity: 1;
+}
+
+/* End Educational Furniture:<Home-Page> */
+
+/* Start Educational Environments:<Home-Page> */
+.educational-environments .item {
+    position: relative;
+    overflow: hidden;
+    max-width: 510px;
+    height: 600px;
+    border-radius: 10px;
+    margin: 0px auto;
+}
+
+.educational-environments .item .title,
+.educational-environments .item .image,
+.educational-environments .item .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    justify-content: start;
+}
+
+.educational-environments .item .title {
+    top: 20%;
+    left: -50%;
+    transform: translateX(50%);
+    text-align: center;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.educational-environments .item .content {
+    background-color: #0000004D;
+    padding-top: 23.40%;
+}
+
+.educational-environments .item:hover .title {
+    opacity: 0;
+    z-index: 0;
+}
+
+.educational-environments .item .content::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-lines.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* End Educational Environments:<Home-Page> */
+/* Start Our Partners:<Home-Page> */
+.our-partners {
+    position: relative;
+}
+
+.our-partners::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/bg-image-partners.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 16%;
+}
+
+.our-partners .item .image {
+    border: 15px solid var(--secondary-color);
+    border-radius: 50%;
+    max-width: 280px;
+    height: 280px;
+    aspect-ratio: 1/1;
+    margin: 0px auto 30px;
+}
+
+.our-partners .item a {
+    border-radius: 8px !important;
+    padding: 12px 20px;
+}
+
+.our-partners .item .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* End Our Partners:<Home-Page> */
+/* Start Our Statistics:<Home-Page> */
+.our-statistics {
+    position: relative;
+    background-color: #F1F4F5;
+}
+
+.our-statistics::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-image: url(../images/our-static-bg.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 10%;
+}
+
+.our-statistics .content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.our-statistics .content .item {
+    width: 190px;
+    height: 190px;
+    background-color: #F7F7FB;
+    border: 1px solid #9C9999;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.our-statistics .content .item img {
+    width: 80px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.our-statistics .content .item .num {
+    color: var(--labels-color);
+}
+
+.our-statistics .content .item .text {
+    color: var(--gray-color);
+}
+
+/* End Our Statistics:<Home-Page> */
+/* Start Our Projects :<Home-Page> */
+.our-projects {
+    background-color: #EDF1F2CC;
+}
+
+.our-projects .swiper-slide {
+    text-align: center;
+}
+
+.our-projects .item {
+    position: relative;
+    max-width: 275px;
+    margin: 0px auto;
+}
+
+.our-projects .item .content img,
+.our-projects .item .content .text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    z-index: 3;
+}
+
+.our-projects .item .content {
+    overflow: hidden;
+    border-radius: 25px;
+    position: relative;
+    width: 100%;
+    height: 370px;
+}
+
+.our-projects .item .content .text {
+    background-color: #00000066;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    color: var(--white-color);
+
+}
+
+.our-projects .item img {
+    opacity: 90%;
+    object-fit: cover;
+}
+
+.our-projects .item .num {
+    position: absolute;
+    top: -2%;
+    left: -2%;
+    width: 120px;
+    height: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(30px, 40px, 4vw);
+    font-weight: 700;
+    color: var(--white-color);
+    z-index: 5;
+}
+
+.our-projects .item .num::after,
+.our-projects .item .num::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+.our-projects .item .num::before {
+    mask-image: url(../images/Ellipse.svg);
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    background-color: #f1f4f5;
+    mask-position: center;
+    z-index: -1;
+    scale: 1.3;
+}
+
+.our-projects .item .num::after {
+    background-image: url(../images/Ellipse.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: -1;
+    width: 80%;
+    height: 80%;
+}
+
+/* End Our Projects :<Home-Page> */
