@@ -91,6 +91,11 @@ html[dir="rtl"] .form-control {
 }
 
 .section-padding {
+    padding-top: var(--section-pading);
+    padding-bottom: var(--section-pading);
+}
+
+.section-padding-2 {
     padding-top: calc(var(--section-pading) * 2.5);
     padding-bottom: var(--section-pading);
 }
@@ -834,3 +839,60 @@ footer .bottom-footer ul li a.link-item {
 }
 
 /* End Partners Hero:<Partners-Page> */
+/* Start Contact Us:<Contact_US-Page> */
+.contact-hero img {
+    height: 270px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0% 30%;
+}
+
+.contact-form .form-control {
+    padding: 16px;
+    color: #827F7F;
+    font-weight: 500;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form .widget {
+    padding: 60px 20px;
+    box-shadow: 0px 1px 6px 0px #1929470F;
+    background-color: #213E8D33;
+    border-radius: 15px;
+}
+
+.contact-form .widget .info {
+    border-radius: 10px;
+    border: 1px solid #DEE2E6;
+    padding: 24px 16px;
+}
+
+.contact-form .widget .info p {
+    color: #212F3E;
+    font-weight: 500;
+    line-height: 22px;
+    font-size: clamp(14px, 17px, 4vw);
+}
+
+.contact-form .widget .social-media {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px 16px;
+}
+
+.contact-form .widget .social-media a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+
+/* End Contact Us:<Contact_US-Page> */
