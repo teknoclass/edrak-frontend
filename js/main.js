@@ -81,3 +81,47 @@ const partnersSwiper = new Swiper(".our-partners .swiper-container", {
         }
     },
 });
+const projectsSwiper = new Swiper(".our-projects .swiper-container", {
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    speed: 500,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        1400: {
+            slidesPerView: 4,
+        }
+    },
+});
+const saidAboutUsSwiper = new Swiper(".said-aboutus .swiper-container", {
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    speed: 500,
+    spaceBetween: 30,
+    centeredSlides: true,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 3,
+        },
+        1400: {
+            slidesPerView: 4,
+        }
+    },
+});
