@@ -57,7 +57,7 @@ const educationalEnvSwiper = new Swiper(".educational-environments .swiper-conta
         992: {
             slidesPerView: 2,
         },
-        
+
     },
 });
 const partnersSwiper = new Swiper(".our-partners .swiper-container", {
@@ -123,5 +123,29 @@ const saidAboutUsSwiper = new Swiper(".said-aboutus .swiper-container", {
         1400: {
             slidesPerView: 4,
         }
+    },
+});
+const videoSwiper = new Swiper(".video-section .swiper-container", {
+    navigation: {
+        nextEl: ".video-section .swiper-button-next",
+        prevEl: ".video-section .swiper-button-prev",
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+});
+// Start Product Thumb Slider
+const swiper = new Swiper(".product-details-page .thumbs-slider", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+
+const swiper2 = new Swiper(".product-details-page .swiper-product-view", {
+    loop: true,
+    spaceBetween: 10,
+    thumbs: {
+        swiper: swiper,
     },
 });
