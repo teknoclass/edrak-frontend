@@ -149,3 +149,14 @@ const swiper2 = new Swiper(".product-details-page .swiper-product-view", {
         swiper: swiper,
     },
 });
+// End Product Thumb Slider
+const newsHeroswiper = new Swiper(".news-hero .swiper-container", {
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".news-hero .swiper-pagination",
+        clickable: true,
+    },
+});
