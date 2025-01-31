@@ -127,8 +127,8 @@ const saidAboutUsSwiper = new Swiper(".said-aboutus .swiper-container", {
 });
 const videoSwiper = new Swiper(".video-section .swiper-container", {
     navigation: {
-        nextEl: ".video-section .swiper-button-next",
         prevEl: ".video-section .swiper-button-prev",
+        nextEl: ".video-section .swiper-button-next",
     },
     slidesPerView: 1,
     spaceBetween: 30,
