@@ -16,8 +16,9 @@ document.addEventListener("DOMContentLoaded", () => {
 const mainHeroSwiper = new Swiper(".main-hero .swiper-container", {
     slidesPerView: 1,
     autoplay: {
-        delay: 2000,
+        delay: 4000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     },
     speed: 500,
 });
@@ -25,6 +26,7 @@ const educationalSwiper = new Swiper(".educational-furniture .swiper-container",
     autoplay: {
         delay: 1000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     },
     speed: 500,
     breakpoints: {
@@ -44,8 +46,9 @@ const educationalSwiper = new Swiper(".educational-furniture .swiper-container",
 });
 const educationalEnvSwiper = new Swiper(".educational-environments .swiper-container", {
     autoplay: {
-        delay: 1000,
+        delay: 3000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     },
     speed: 500,
     spaceBetween: 10,
@@ -62,7 +65,7 @@ const educationalEnvSwiper = new Swiper(".educational-environments .swiper-conta
 });
 const partnersSwiper = new Swiper(".our-partners .swiper-container", {
     autoplay: {
-        delay: 1000,
+        delay: 2000,
         disableOnInteraction: false,
     },
     speed: 500,
@@ -83,8 +86,9 @@ const partnersSwiper = new Swiper(".our-partners .swiper-container", {
 });
 const projectsSwiper = new Swiper(".our-projects .swiper-container", {
     autoplay: {
-        delay: 1000,
+        delay: 2000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     },
     speed: 500,
     breakpoints: {
@@ -104,8 +108,9 @@ const projectsSwiper = new Swiper(".our-projects .swiper-container", {
 });
 const saidAboutUsSwiper = new Swiper(".said-aboutus .swiper-container", {
     autoplay: {
-        delay: 1000,
+        delay: 3000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     },
     speed: 500,
     spaceBetween: 30,
@@ -154,6 +159,7 @@ const newsHeroswiper = new Swiper(".news-hero .swiper-container", {
     autoplay: {
         delay: 2000,
         disableOnInteraction: false,
+        pauseOnMouseEnter: true,
     },
     pagination: {
         el: ".news-hero .swiper-pagination",
