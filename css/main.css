@@ -1680,6 +1680,10 @@ footer .bottom-footer ul li a.link-item {
     height: 100%;
 }
 
+.about-hero-section .container .hero-text {
+    padding-top: 25px;
+}
+
 .about-hero-section .container .hero-text p {
     color: var(--gray-color-5);
     line-height: 36px;
@@ -1723,10 +1727,6 @@ footer .bottom-footer ul li a.link-item {
 }
 
 @media (max-width: 1199px) {
-    .about-hero-section {
-        height: calc(100dvh + 150px);
-    }
-
     .about-hero-section .images-hero .absolute-images img {
         width: 100px;
         height: 100px;
