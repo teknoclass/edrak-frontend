@@ -430,8 +430,8 @@ footer .bottom-footer ul li a.link-item {
 .educational-environments .item {
     position: relative;
     overflow: hidden;
-    max-width: 510px;
-    height: 600px;
+    max-width: 450px;
+    height: 550px;
     border-radius: 10px;
     margin: 0px auto;
 }
@@ -453,6 +453,7 @@ footer .bottom-footer ul li a.link-item {
     text-align: center;
     font-weight: 700;
     color: var(--white-color);
+    text-shadow: 0px 0px 3px #0000008e;
 }
 
 .educational-environments .item .content {
@@ -733,7 +734,7 @@ footer .bottom-footer ul li a.link-item {
     color: var(--schemes-secondary);
     font-weight: 400;
     line-height: 40px;
-    font-size: clamp(20px, 26px, 4vw);
+    font-size: clamp(17px, 22px, 4vw);
 }
 
 .blog-card-item .info .text {

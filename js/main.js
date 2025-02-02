@@ -68,6 +68,7 @@ const partnersSwiper = new Swiper(".our-partners .swiper-container", {
         delay: 2000,
         disableOnInteraction: false,
     },
+    spaceBetween: 30,
     speed: 500,
     breakpoints: {
         0: {
